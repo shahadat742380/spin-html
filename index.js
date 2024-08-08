@@ -11,7 +11,7 @@ var padding = {top:20, right:40, bottom:0, left:0},
             color = d3.scale.ordinal().range(["#EF3A53", "#EF3A531A"]); 
             
         var data = [
-                    {"label":"1000",  "value":1,  "question":"100"}, 
+                    {"label":"1000", "value":1,  "question":"100"}, 
                     {"label":"200",  "value":2,  "question":"200"}, 
                     {"label":"300",  "value":3,  "question":"400"}, 
                     {"label":"500",  "value":4,  "question":"500"},
@@ -19,8 +19,8 @@ var padding = {top:20, right:40, bottom:0, left:0},
                     {"label":"700",  "value":6,  "question":"700"}, 
                     {"label":"800",  "value":7,  "question":"800"}, 
                     {"label":"900",  "value":8,  "question":"900"},
-                    {"label":"1000",  "value":9,  "question":"1000"}, 
-                    {"label":"400", "value":10, "question":"400"}
+                    {"label":"1000", "value":9,  "question":"1000"}, 
+                    {"label":"400",  "value":10, "question":"400"}
         ];
         var svg = d3.select('#chart')
             .append("svg")
@@ -37,7 +37,6 @@ var padding = {top:20, right:40, bottom:0, left:0},
         // declare an arc generator function
         var arc = d3.svg.arc().outerRadius(r);
 
-        
         
         // select paths, use arc generator to draw
         var arcs = vis.selectAll("g.slice")
@@ -69,7 +68,6 @@ var padding = {top:20, right:40, bottom:0, left:0},
                 },
                 "font-weight": "600",
                 "font-size": "18px" ,
-
             });
 
 
